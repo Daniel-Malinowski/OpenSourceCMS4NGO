@@ -11,12 +11,10 @@ class Admin(models.Model):
     password = models.CharField(
         min_length=8, max_length=16, blank=False, verbose_name='Hasło')
 
-
     def __str__(self):
         return self.name
-    
+
     class Meta:
         verbose_name = 'Użytkownik'
         verbose_name_plural = 'Użytkownicy'
         ordering = ['name']
-        
